@@ -1,0 +1,37 @@
+buildscript {
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+
+    }
+}
+
+//全局变量
+ext {
+
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories {
+        jcenter()
+    }
+
+    version = '1.0'
+
+    dependencies {
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        testCompile 'junit:junit:4.12'
+    }
+
+}

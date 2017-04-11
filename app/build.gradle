@@ -1,0 +1,14 @@
+apply plugin: 'war'
+
+war{
+    baseName = 'app'
+    version = '1.0'
+}
+
+sourceCompatibility = 1.8
+
+dependencies {
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile 'javax.servlet.jsp:jsp-api:2.2'
+    compile 'mysql:mysql-connector-java:6.0.6'
+}
